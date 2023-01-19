@@ -67,7 +67,7 @@ async def on_message(message):
                         authorDesignation = serverMemberAuthor.name
 
                     # Changes the webhook to the appareance of the tagged user
-                    await webhook.edit(name=serverMemberAuthor, avatar=avatar_b64)
+                    await webhook.edit(name=taggedDesignation, avatar=avatar_b64)
                     # Chooses random message from the JSON Replies
                     randomReply = random.choice(replies)
                     # Assign the variables of the JSON to the variables
@@ -76,4 +76,4 @@ async def on_message(message):
                     await webhook.send(message)
 
 # Connect to the bot
-client.run('MTA2NTQ0MDcyOTk1NjEwNjI0MQ.GGGvh5.46bLslK1MA8Ea9vJYNn7rzOhSinaBqS6lrNVrI')
+client.run('YOUR-TOKEN-HERE')
